@@ -2,8 +2,21 @@ body{
 	background-color:grey;
 	font-style: verdana,cursive;
 }
+
 h1{
 	color: blue;
+	font-size: 70;
+	
+}
+
+button{
+	color: blue;
+	font-size: 70;
+	
+}
+
+input{
+	color: black;
 	font-size: 70;
 	
 }
