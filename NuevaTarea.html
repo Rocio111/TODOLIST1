@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Formulario Nueva Tarea
+	</title>
+	<script type="text/javascript">
+		function validar(){
+			var form = document.form;
+			if (form.ID.value==0) {
+				alert("el campo ID esta vacio");
+				form.ID.value="";
+				form.ID.focus();
+				return false;
+			}
+
+			if (form.Tareas.value==0) {
+				alert("el campo Tareas esta vacio");
+				form.Tareas.value="";
+				form.Tareas.focus();
+				return false;
+			}
+			alert("Datos enviados con exito");
+			form.submit();
+		}
+	</script>
+</head>
+<body>
+<h1>Nueva Tarea</h1><!--Titulos-->
+<form name="form" action = "#" method =  "POST" onsubmit="return validar();">
+    ID:<input type="Numerico" name="ID" placeholder="Ingresa ID"> <br>
+	Tareas: <input type="text" name="Tareas" placeholder="Ingresa Tareas"> <br>
+
+<button> <a href = "NuevaTarea.html" onclick="validar();"> Enviar datos</button>
+<button> <a href = "index.html"> Salir</button>
+</form>
+</body>
+</html>
