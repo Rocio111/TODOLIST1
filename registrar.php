@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,20 +60,21 @@
 			form.submit();
 		}
 	</script>
+
 </head>
 <body>
 <h1>Formulario de Registro</h1><!--Titulos-->
-<form name="form" action = "#" method =  "POST" onsubmit="return validar();">
+<form name="form" action = "con_db.php" method =  "POST" onsubmit="return validar();">
     Nombre: <input type="text" name="Nombre" placeholder="Ingresa tu nombre"> <br>
 	Apellidos: <input type="text" name="Apellidos" placeholder="Ingresa tus Apellidos"> <br>
 	Direccion: <input type="text" name="Direccion" placeholder="Ingresa Direccion"> <br>
-	E-mail: <input type="email" name="correo" placeholder="Ingresa tu email"> <br>
-	Pasword: <input type="Pasword" name="Pasword" placeholder="Ingresa Pasword"> <br>
+	correo: <input type="email" name="Correo" placeholder="Ingresa tu email"> <br>
+	contraseña: <input type="Pasword" name="Contraseña" placeholder="Ingresa Pasword"> <br>
 	Genero: <input type="text" name="Genero" placeholder="Ingresa Genero"> <br>
 	Telefono: <input type="tel" name="Telefono" placeholder="Ingresa telefono"> <br>
 
-<button onclick="validar();">Enviar datos</button>
-<button> <a href = "Portada.html">Regresar a Login</button>
+<button> <a href="con_db.php" >Enviar datos</button>
+<button> <a href = "Portada.php">Salir</button>
 </form>
 </body>
 </html>
