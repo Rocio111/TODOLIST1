@@ -5,9 +5,9 @@
 </head>
 <body>
 	<?php
-	include 'conexion.php';
+	include 'con_db_ttareas.php';
 	$sql="select * from tareas";
-	$resultado=mysql_query($sql);
+	$resultado=mysqli_query($sql);
 	?>
 	<div>
 		<table>
@@ -18,7 +18,7 @@
 			</tr>
 			</thead>
 			<tbody>
-				<?php while ($filas=mysql_fetch_assoc($resultado)){
+				<?php while ($filas=mysqli_fetch_assoc($resultado)){
 					?>
 				<tr>
 					<td><?php echo $filas['id']?></td>

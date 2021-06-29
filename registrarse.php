@@ -73,8 +73,8 @@
 	Genero: <input type="text" name="Genero" placeholder="Ingresa Genero"> <br>
 	Telefono: <input type="tel" name="Telefono" placeholder="Ingresa telefono"> <br>
 
-<button> <a href="con_db.php" >Enviar datos</button>
-<button> <a href = "Portada.php">Salir</button>
+<button> <a href="con_db_tregistro.php" >Enviar datos</button>
+<button> <a href = "Portada_login.php">Salir</button>
 </form>
 </body>
 </html>
